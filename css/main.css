@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Short+Stack');
+
+html { 
+    height: 100%; 
+    font-family: 'Short Stack', cursive;
+}
+
+body { 
+    background-image: url('../imgs/mozos-bg.png');
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    border: solid thick black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: auto 3%;
+    height: 80%;
+    padding: 3% 5%;
+}
+
+canvas {
+    height: 100%;
+    flex-grow: 1;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+figcaption {
+    text-align: center;
+}
+
+table {
+    text-align: center;
+    margin: auto auto 5%;
+}
+
+td {
+    padding: 5px;
+}
+
+.login_label {
+    display: inline-block;
+    width: 8em;
+    margin-bottom: 1%;
+}
+
+.flex-centered-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-row-just-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.thick-border {
+    border: solid thick black;
+}
+
+.mozo-price {
+    font-weight: bold;
+}
+
+.remove-item input {
+    width: 4em;
+}
+
+
+
+#mozo-card {
+    flex-wrap: wrap;
+    flex-grow: 0;
+}
+
+#mozo-card img {
+    width: 128px;
+}
+
+#premium-mozos figure {
+    width: 256px;
+    margin: 5px;
+    justify-content: normal;
+    flex-grow: 0;
+}
+
+#premium-mozos {
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+#premium-mozos figure img {
+    width: 128px;
+}
+
+#name-mozos input {
+    display: block;
+}
+
+nav a {
+    margin: .5em;
+    padding: .5em;
+    text-decoration: none;
+    background-color: rgb(214, 191, 117);
+    border: solid thick rgba(0, 0, 0, 0.26);
+    border-radius: 10px;
+    font-size: 1em;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: rgb(228, 210, 151);
+}
+
+fieldset {
+    padding: 5px;
+    margin: 5px;
+    flex-wrap: wrap;
+}
+fieldset legend {
+    background-color: black;
+    color: white;
+    font-size: 1.1em;
+    padding: 3px;
+}
+
+.mozo-set textarea {
+    display: block;
+}
+
+
+#spinners {
+    display: flex;
+    flex-direction: row;
+}
+
+.waiting-1, .waiting-2, .waiting-3 {
+    margin: 8px;
+}
+
+.waiting-1 div, .waiting-3 div  {
+    animation: spin-a 1.5s linear infinite;
+     width: 32px;
+    height: 32px;
+}
+
+.waiting-2 div {
+    animation: spin-b 1.5s linear infinite;
+    width: 32px;
+    height: 32px;
+}
+
+@keyframes spin-a {
+  0%    { transform: rotate(0); }
+  50%   { border-radius: 50%; }
+  100%  { transform: rotate(-360deg); border-radius: 0%; }
+}
+
+@keyframes spin-b {
+  0%    { transform: rotate(); border-radius: 50%; }
+  50%   { border-radius: 0%; }
+  100%  {transform: rotate(360deg); border-radius: 50%; }
+}
+
+.bestiary-section h2 {
+    text-align: center;
+}
+
+.mozo-input {
+    display: block;
+}
+
+.mozo-display {
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+.mozo-display figure {
+    display: flex;
+    width: 256px;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 0;
+}
+
+.mozo-display figure img {
+    width: 128px;
+}
