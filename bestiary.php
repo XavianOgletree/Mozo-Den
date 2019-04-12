@@ -1,6 +1,6 @@
 <?php
 session_start();
-$pagename = "Your Mozos";
+$pagename = "The Bestiary";
 
 include("includes/header.php");
 require_once("includes/open_db.php");
